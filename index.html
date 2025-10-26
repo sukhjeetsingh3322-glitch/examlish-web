@@ -80,4 +80,157 @@
     .hero h1 {
       font-size: clamp(40px, 8vw, 70px);
       color: var(--accent);
-      margin: 5px 0 10p
+      margin: 5px 0 10px;
+      font-weight: 800;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 780px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 14px 26px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border: 1px solid var(--ring);
+      transition: 0.25s ease;
+    }
+    .btn.primary {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+    .btn.primary:hover { background: #0058c7; transform: scale(1.05); }
+    .btn.secondary {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+    }
+    .btn.secondary:hover { opacity: 0.9; transform: scale(1.05); }
+
+    /* Feature Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 50px 0;
+    }
+    .card {
+      border: 1px solid var(--ring);
+      border-radius: 18px;
+      padding: 28px;
+      background: var(--card);
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card h3 {
+      color: var(--brand);
+      font-size: 1.3rem;
+      margin-top: 0;
+    }
+    .card p { color: var(--muted); }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, rgba(15,108,229,0.08), rgba(245,176,0,0.1));
+      border-top: 1px solid var(--ring);
+      border-bottom: 1px solid var(--ring);
+      text-align: center;
+      padding: 70px 0;
+    }
+    .cta h2 { font-size: 2rem; margin-bottom: 12px; color: var(--text); }
+    .cta p { color: var(--muted); margin-bottom: 24px; font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      padding: 30px 0;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--ring);
+      background: #fafbfc;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero img { width: 180px; }
+      .hero h1 { font-size: 2.4rem; }
+      .hero h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="wrap nav">
+    <a class="brand" href="#">
+      <img src="logo.png" alt="Examlish Logo" onerror="this.style.display='none'">
+      <span>Examlish</span>
+    </a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero wrap">
+    <img src="logo.png" alt="Examlish Logo" onerror="this.style.display='none'">
+    <h1>Examlish</h1>
+    <h2>"AI That Cares About Your Score."</h2>
+    <p>Smart, honest, and affordable prep for PTE & IELTS — combining human insight with explainable AI feedback to help you master your exam with confidence.</p>
+    <div class="actions">
+      <a href="about.html" class="btn primary">Explore</a>
+      <a href="contact.html" class="btn secondary">Contact</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="grid wrap">
+    <article class="card">
+      <h3>🎯 PTE Focus</h3>
+      <p>Practice real exam questions with smart AI scoring that aligns with official rubrics — no fake marks, just truth.</p>
+    </article>
+    <article class="card">
+      <h3>🤖 Honest AI</h3>
+      <p>Get real-time feedback with detailed reasons for every score, so you know *why* and *how* to improve faster.</p>
+    </article>
+    <article class="card">
+      <h3>💸 Save Money</h3>
+      <p>Skip overpriced coaching. Learn smarter with Examlish — affordable, accessible, and built for students first.</p>
+    </article>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>Ready when you are.</h2>
+      <p>Start free. Study anywhere. Examlish is your transparent, AI-assisted exam companion built for success.</p>
+      <a href="contact.html" class="btn primary">Join the Journey</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Examlish • Melbourne, Australia</p>
+  </footer>
+
+</body>
+</html>
