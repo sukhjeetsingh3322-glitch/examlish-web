@@ -1,28 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Examlish – Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Examlish — Learn Smarter. Score Higher.</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Examlish Logo" width="100">
-    <h1>Welcome to Examlish</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Examlish" onerror="this.style.display='none'">
+        <span>Examlish</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">
+        ☰
+      </button>
+
+      <nav class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Learn Smarter. Score Higher.</h2>
-    <p>Examlish helps students prepare for PTE, IELTS, and more using AI-based tools and templates.</p>
-  </main>
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Learn Smarter. Score Higher.</h1>
+      <p>Practical, AI-assisted prep for PTE, IELTS & more — built to save students money and deliver transparent results.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="about.html">Explore Examlish</a>
+        <a class="btn btn-ghost" href="contact.html">Talk to us</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>What you get</h3>
+      <ul>
+        <li>Realistic practice with instant feedback</li>
+        <li>Non-robotic templates & smart hints</li>
+        <li>Clear scoring breakdowns (no hype)</li>
+      </ul>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Examlish. All rights reserved.</p>
+  <section class="features container">
+    <article class="card">
+      <h3>PTE Focus</h3>
+      <p>Target tasks like RA, DI, SST, WFD with concise, exam-day tactics and graded samples.</p>
+      <a class="link" href="about.html">See how →</a>
+    </article>
+    <article class="card">
+      <h3>Honest AI</h3>
+      <p>Feedback you can trust — alignment with official rubrics, with reasoning not mystery.</p>
+      <a class="link" href="about.html">Our approach →</a>
+    </article>
+    <article class="card">
+      <h3>Student-First</h3>
+      <p>Transparent pricing, practical tools, and community support to reduce coaching costs.</p>
+      <a class="link" href="contact.html">Get support →</a>
+    </article>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to build confidence?</h2>
+      <p>Start with a simple plan today and grow at your pace. Examlish is built for real students.</p>
+      <a class="btn btn-primary" href="contact.html">Contact us</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Examlish</strong>
+        <p>Melbourne, Australia</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copy">© 2025 Examlish. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
