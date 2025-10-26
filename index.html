@@ -15,108 +15,69 @@
       --brand: #0f6ce5;
       --accent: #f5b000;
     }
+
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font: 16px/1.6 system-ui, Segoe UI, Roboto, Arial, sans-serif;
+      font: 17px/1.7 "Segoe UI", Roboto, system-ui, Arial;
       color: var(--text);
       background: var(--bg);
     }
     .wrap { width: min(1100px, 92vw); margin: 0 auto; }
 
-    /* Navigation */
+    /* Header */
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 16px 0;
+      padding: 22px 0;
       position: sticky;
       top: 0;
-      background: rgba(255,255,255,0.85);
-      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--ring);
+      z-index: 100;
     }
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-weight: 700;
+      gap: 12px;
+      font-weight: 800;
       text-decoration: none;
       color: var(--text);
+      font-size: 1.3rem;
     }
     .brand img {
-      width: 40px; height: 40px;
-      border-radius: 10px;
+      width: 52px; height: 52px;
+      border-radius: 12px;
       object-fit: contain;
     }
     nav a {
       color: var(--muted);
       text-decoration: none;
-      margin-left: 16px;
-      font-weight: 500;
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.2s;
     }
     nav a:hover { color: var(--brand); }
 
-    /* Hero */
+    /* Hero Section */
     .hero {
-      padding: 70px 0 40px;
       text-align: center;
+      padding: 100px 20px 80px;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .hero img {
-      width: 180px;
-      display: block;
-      margin: 0 auto 20px;
+      width: 240px;
+      margin-bottom: 25px;
       object-fit: contain;
     }
     .hero h1 {
-      font-size: clamp(32px, 6vw, 54px);
-      margin: 10px 0;
+      font-size: clamp(40px, 8vw, 70px);
       color: var(--accent);
-    }
-    .hero h2 {
-      font-size: 20px;
-      color: var(--muted);
-      margin-bottom: 28px;
-    }
-    .hero p {
-      color: var(--muted);
-      margin: 0 auto 20px;
-      max-width: 720px;
-    }
-    .actions {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      border: 1px solid var(--ring);
-      transition: 0.2s ease;
-    }
-    .btn.primary {
-      background: var(--brand);
-      color: #fff;
-      border-color: var(--brand);
-    }
-    .btn.primary:hover { background: #0058c7; }
-    .btn.secondary {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-    }
-
-    /* Feature Grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 18px;
-      padding: 30px 0;
-    }
-    .card {
-      border: 1px solid var(--ring);
-      borde
+      margin: 5px 0 10p
