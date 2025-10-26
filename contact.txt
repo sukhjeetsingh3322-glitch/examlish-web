@@ -2,13 +2,12 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Examlish – Home</title>
+  <title>Contact – Examlish</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Examlish Logo" width="100">
-    <h1>Welcome to Examlish</h1>
+    <h1>Contact Us</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -17,12 +16,12 @@
   </header>
 
   <main>
-    <h2>Learn Smarter. Score Higher.</h2>
-    <p>Examlish helps students prepare for PTE, IELTS, and more using AI-based tools and templates.</p>
+    <p>Email: <a href="mailto:support@examlish.com">support@examlish.com</a></p>
+    <p>Melbourne, Australia</p>
   </main>
 
   <footer>
-    <p>© 2025 Examlish. All rights reserved.</p>
+    <p>© 2025 Examlish.</p>
   </footer>
 </body>
 </html>
